@@ -1,13 +1,22 @@
+.ui.top.menu {
+	height: 65px;
+	border-radius: 0px;
+}
+
+.ui.top.menu .item {
+	font-size: 110% !important;
+}
+
+.ui.top.menu .active.item {
+	font-weight: bold !important;
+}
+
 .ui.secondary.pointing.menu {
 	border: none;
 }
 
 .hidden.menu {
 	display: none;
-}
-
-.masthead .logo.item img {
-	margin-right: 1em;
 }
 .masthead .ui.menu .ui.button {
 	margin-left: 0.5em;
@@ -23,7 +32,15 @@
 }
 
 .ui.vertical.stripe {
-	padding: 8em 0em;
+	padding: 7em 0em;
+}
+
+.title h1 {
+	font-size: 4em;
+}
+
+.ui.vertical.stripe.title {
+	padding: 4em 0em 2em 0em;
 }
 .ui.vertical.stripe h3 {
 	font-size: 2em;
@@ -59,7 +76,7 @@
 }
 
 @media only screen and (max-width: 700px) {
-	.ui.fixed.menu {
+	.ui.top.menu {
 		display: none !important;
 	}
 	.secondary.pointing.menu .item,

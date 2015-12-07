@@ -1,23 +1,35 @@
 <!-- Following Menu -->
-<div class="ui large top fixed hidden menu">
+<div class="ui large top blue inverted <%= typeof index === 'undefined' ? '' : 'hidden' %> menu">
 	<div class="ui container">
-		<a href="/" class="active item">Home</a>
+		<a href="/" class="<%= typeof index === 'undefined' ? '' : index %> item">
+			<i class="home icon"></i> Home
+		</a>
 		<div class="right menu">
-			<a href="/about" class="item">About</a>
-			<a href="/work" class="item">Work Experience</a>
-			<a href="/academics" class="item">Academics</a>
-			<a href="/extracurriculars" class="item">Extracurriculars</a>
-			<a href="/contact" class="item">Contact</a>
+			<a href="/about" class="<%= typeof about === 'undefined' ? '' : about %> item">
+				<i class="user icon"></i> About
+			</a>
+			<a href="/work" class="<%= typeof work === 'undefined' ? '' : work %> item">
+				<i class="code icon"></i> Work Experience
+			</a>
+			<a href="/academics" class="<%= typeof academics === 'undefined' ? '' : academics %> item">
+				<i class="student icon"></i> Academics
+			</a>
+			<a href="/extracurriculars" class="<%= typeof extracurriculars === 'undefined' ? '' : extracurriculars %> item">
+				<i class="world icon"></i> Extracurriculars
+			</a>
+			<a href="/contact" class="<%= typeof contact === 'undefined' ? '' : contact %> item">
+				<i class="call icon"></i> Contact
+			</a>
 		</div>
 	</div>
 </div>
 
 <!-- Sidebar Menu -->
 <div class="ui vertical inverted sidebar menu">
-	<a href="/" class="active item">Home</a>
-	<a href="/about" class="item">About</a>
-	<a href="/work" class="item">Work Experience</a>
-	<a href="/academics" class="item">Academics</a>
-	<a href="/extracurriculars" class="item">Extracurriculars</a>
-	<a href="/contact" class="item">Contact</a>
+	<a href="/" class="<%= typeof index === 'undefined' ? '' : index %> item">Home</a>
+	<a href="/about" class="<%= typeof about === 'undefined' ? '' : about %> item">About</a>
+	<a href="/work" class="<%= typeof work === 'undefined' ? '' : work %> item">Work Experience</a>
+	<a href="/academics" class="<%= typeof academics === 'undefined' ? '' : academics %> item">Academics</a>
+	<a href="/extracurriculars" class="<%= typeof extracurriculars === 'undefined' ? '' : extracurriculars %> item">Extracurriculars</a>
+	<a href="/contact" class="<%= typeof contact === 'undefined' ? '' : contact %> item">Contact</a>
 </div>

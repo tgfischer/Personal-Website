@@ -5,7 +5,8 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('about', {
   	about : 'active',
-  	title : 'About Myself'
+  	title : 'About Tom Fischer',
+  	header : 'Welcome!'
   });
 });
 

@@ -24,8 +24,10 @@ app.set('port', process.env.PORT || 3000);
 ------------------------------------------------------ */
 var index = require('./routes/index');
 var about = require('./routes/about');
+var work = require('./routes/work');
 app.use('/', index);
 app.use('/about', about);
+app.use('/work', work);
 
 /* 404 Page
 -------------------------------------------------------- */

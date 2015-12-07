@@ -7,17 +7,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
 	<!-- Site Properities -->
-	<title>Tom Fischer</title>
+	<title><%= title %></title>
 	<link rel="stylesheet" type="text/css" href="/libs/semantic/semantic.min.css">
 	<link rel="stylesheet" type="text/css" href="/css/styles.css">
 	<link rel="stylesheet" type="text/css" href="/css/index.css">
 </head>
 <body>
-
-	<% include common/nav %>
-
 	<!-- Page Contents -->
 	<div class="pusher">
+		<% include common/nav %>
+
 		<div class="ui inverted vertical masthead center aligned segment">
 
 			<div class="ui container">
@@ -39,7 +38,7 @@
 			<div class="ui middle aligned center aligned grid">
 				<div class="column">
 					<h1 class="ui inverted header">
-						<%= title %>
+						<%= header %>
 					</h1>
 					<h2>
 						<%= body %>

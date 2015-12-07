@@ -1,10 +1,11 @@
 .ui.top.menu {
 	height: 65px;
 	border-radius: 0px;
+	margin: 0 !important;
 }
 
 .ui.top.menu .item {
-	font-size: 110% !important;
+	font-size: 105% !important;
 }
 
 .ui.top.menu .active.item {
@@ -71,20 +72,25 @@
 	padding: 5em 0em;
 }
 
-.secondary.pointing.menu .toc.item {
+.secondary.pointing.menu .toc.item,
+.ui.top.menu .toc.item {
 	display: none;
 }
 
 @media only screen and (max-width: 700px) {
-	.ui.top.menu {
+	.ui.vertical.stripe {
+		padding: 3em 0em;
+	}
+	.ui.top.menu .item {
 		display: none !important;
 	}
 	.secondary.pointing.menu .item,
 	.secondary.pointing.menu .menu {
 		display: none;
 	}
-	.secondary.pointing.menu .toc.item {
-		display: block;
+	.secondary.pointing.menu .toc.item,
+	.ui.top.menu .toc.item {
+		display: flex !important;
 	}
 	.masthead.segment {
 		min-height: 350px;

@@ -1,0 +1,78 @@
+/* Responsive Masthead Background Image
+---------------------------------------------------------------------- */
+.masthead {
+	background: none !important;
+	
+}
+
+.pusher .grid {
+	height: 100vh;
+    position: absolute;
+    pointer-events:none;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.pusher .grid .column {
+	padding: 50px !important;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 2560px) {
+    .pusher {
+        background: linear-gradient(
+	      rgba(0, 0, 0, 0.6), 
+	      rgba(0, 0, 0, 0.6)
+	    ),
+	    url('/images/background-2560_mini.jpg') no-repeat center center fixed !important;
+    }
+}
+
+@media (max-width: 1920px) {
+    .pusher {
+    	background: linear-gradient(
+	      rgba(0, 0, 0, 0.6), 
+	      rgba(0, 0, 0, 0.6)
+	    ),
+        url('/images/background-1920_mini.jpg') no-repeat center center fixed !important;
+    }
+}
+
+@media (max-width: 1680px) {
+    .pusher {
+        background: background: linear-gradient(
+	      rgba(0, 0, 0, 0.6), 
+	      rgba(0, 0, 0, 0.6)
+	    ),
+	    url('/images/background-1680_mini.jpg') no-repeat center center fixed !important;
+    }
+}
+
+@media (max-width: 1024px) {
+    .pusher {
+        background: background: linear-gradient(
+	      rgba(0, 0, 0, 0.6), 
+	      rgba(0, 0, 0, 0.6)
+	    ),
+	    url('/images/background-1024_mini.jpg') no-repeat center center fixed !important;
+    }
+}
+
+@media (max-width: 640px) {
+    .pusher {
+        background: background: linear-gradient(
+	      rgba(0, 0, 0, 0.6), 
+	      rgba(0, 0, 0, 0.6)
+	    ),
+	    url('/images/background-640_mini.jpg') no-repeat center center fixed !important;
+    }
+}
+
+.pusher {
+	background-size: cover !important;
+	-webkit-background-size: cover !important;
+	-moz-background-size: cover !important;
+	-o-background-size: cover !important;
+	padding: 1em 0em;
+}

@@ -1,3 +1,7 @@
 .huge.icon {
 	margin-bottom: 15px;
 }
+
+.ui.vertical.stripe p {
+	font-size: 1.33em;
+}

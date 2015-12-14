@@ -4,23 +4,27 @@ var router = express.Router();
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('work', {
-  	index : 'active',
+  	work : 'active',
   	title : 'Work Experience',
   	header : 'Work Experience',
   	experience : [{
   		company : 'IBM',
   		subtitle : '// 2015-2016',
   		website : 'http://www.ibm.com/ca-en/',
-  		description : '',
+  		description : 'I interned at IBM in Markham, Ontario from May 2015 to August 2016. During this time, I was a Software Developer, mainly working on front end work, and automated testing. I was also one of the Future Blue Web Team leads, where I managed and oversaw several web-based applications',
   		logo : '/images/ibm-logo.jpg',
   		projects : [{
   			header : 'Business Process Manager',
   			body : 'During my time at IBM, I was a software developer for Business Process Manager. In particular, I worked on the Playback component of Process Designer. I learned many new skills, specifically with the Selenium and Dojo frameworks, along with Apache Ant for automating build processes.'
-  		}],
+  		},
+      {
+        header : 'Future Blue Canada Website',
+        body : 'From September 2015 to August 2016, I was one of the Future Blue Web Team leads. The main project that I led was a new Future Blue Canada website. I managed between 6-8 students to help with development using Jazz DevOps, with weekly scrums meetings. The website was developed using NodeJS, EJS, and MySQL.'
+      }],
   		skills : [ 
-  			'Java', 'HTML', 'Javascript', 'Dojo', 'CSS', 
-  			'JUnit', 'Selenium', 'Apache Ant', 'NodeJS', 'Express',
-  			'EJS', 'MySQL'
+  			[ 'Java', 'HTML', 'Javascript', 'Dojo', 'CSS' ], 
+  			[ 'JUnit', 'Selenium', 'Apache Ant', 'NodeJS', 'Express' ],
+  			[ 'EJS', 'MySQL', '', '', '' ]
   		]
   	},
   	{
@@ -42,8 +46,8 @@ router.get('/', function(req, res, next) {
   			body : 'This application automatically inserted data from .DBF files into a SQL Server, at a set interval. This data involved applications for permits. A user could view/edit/delete the data from the database, and generate new reports for queried results. This application also had a feature that would automatically print the permit request when it was added to the database. This feature could be turned on and off.'
   		}],
   		skills : [ 
-  			'C#', 'SQL', 'LINQ', 'Microsoft Access', 'Microsoft SQL Server', 
-  			'Java', 'HTML', 'CSS', 'JavaScript', 'Wordpress'
+  			[ 'C#', 'SQL', 'LINQ', 'Microsoft Access', 'Microsoft SQL Server' ], 
+  			[ 'Java', 'HTML', 'CSS', 'JavaScript', 'Wordpress' ]
   		]
   	},]
   });

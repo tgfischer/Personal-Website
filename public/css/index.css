@@ -2,7 +2,10 @@
 ---------------------------------------------------------------------- */
 .masthead {
 	background: none !important;
-	
+}
+
+.ui.vertical.stripe p {
+	font-size: 1.33em;
 }
 
 .pusher .grid {

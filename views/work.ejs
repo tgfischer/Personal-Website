@@ -27,7 +27,7 @@
 		</div>
 
 		<div class="ui vertical stripe segment">
-			<div class="ui middle aligned stackable grid container">
+			<div class="ui stackable grid container">
 				<% experience.forEach(function(job, i) { %>
 					<div class="row">
 						<div class="ten wide column">
@@ -36,11 +36,38 @@
 								<div class="sub header"><%= job.subtitle %></div>
 							</h1>
 							<p><%= job.description %></p>
+							<div class="ui blue segments">
+								<% job.projects.forEach(function(project, i) { %>
+									<div class="ui red segment">
+										<h2><%= project.header %></h2>
+										<p><%= project.body %></p>
+									</div>
+								<% }); %>
+							</div>
+							<table class="ui celled striped table">
+								<thead>
+									<tr>
+										<th colspan="5">Skills Gained</th>
+									</tr>
+								</thead>
+								<tbody>
+									<% for (var j = 0; j < job.skills.length; j++) { %>
+										<tr>
+											<% job.skills[j].forEach(function(skill, k) { %>
+												<td><%= skill %></td>
+											<% }); %>
+										</tr>
+									<% } %>
+								</tbody>
+							</table>
 						</div>
 						<div class="six wide column">
 							<img src="<%= job.logo %>" class="ui image">
 						</div>
 					</div>
+					<% if (i < experience.length - 1) { %>
+						<div class="ui divider"></div>
+					<% } %>
 				<% }); %>
 			</div>
 		</div>

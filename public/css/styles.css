@@ -1,3 +1,7 @@
+p.large-font {
+	font-size: 1.25em;
+}
+
 .ui.top.menu {
 	height: 65px;
 	border-radius: 0px;
@@ -38,6 +42,10 @@
 
 .title h1 {
 	font-size: 4em;
+}
+
+.segment h1 {
+	font-size: 3em !important;
 }
 
 .ui.vertical.stripe.title {

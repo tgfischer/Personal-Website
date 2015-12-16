@@ -36,14 +36,21 @@
 								<div class="sub header"><%= job.subtitle %></div>
 							</h1>
 							<p><%= job.description %></p>
-							<div class="ui blue segments">
+							<div class="ui red segments">
 								<% job.projects.forEach(function(project, i) { %>
-									<div class="ui red segment">
+									<div class="ui segment">
 										<h2><%= project.header %></h2>
 										<p><%= project.body %></p>
 									</div>
 								<% }); %>
 							</div>
+						</div>
+						<div class="six wide column">
+							<img src="<%= job.logo %>" class="ui image">
+						</div>
+					</div>
+					<div class="row">
+						<div class="column">
 							<table class="ui celled striped table">
 								<thead>
 									<tr>
@@ -60,9 +67,6 @@
 									<% } %>
 								</tbody>
 							</table>
-						</div>
-						<div class="six wide column">
-							<img src="<%= job.logo %>" class="ui image">
 						</div>
 					</div>
 					<% if (i < experience.length - 1) { %>

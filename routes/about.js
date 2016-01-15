@@ -6,7 +6,7 @@ router.get('/', function(req, res, next) {
   res.render('about', {
   	about : 'active',
   	title : 'About Tom Fischer',
-  	header : 'Welcome!'
+  	header : 'About Tom Fischer'
   });
 });
 

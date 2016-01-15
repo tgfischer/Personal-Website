@@ -5,3 +5,7 @@
 .ui.vertical.stripe p {
 	font-size: 1.33em;
 }
+
+.ui.card > .image, .ui.cards > .card > .image {
+	background: none;
+}

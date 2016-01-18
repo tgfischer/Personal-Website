@@ -27,6 +27,7 @@ var about = require('./routes/about');
 var work = require('./routes/work');
 var academics = require('./routes/academics');
 var extracurriculars = require('./routes/extracurriculars');
+var contact = require('./routes/contact');
 var error = require('./routes/error');
 
 app.use('/', index);
@@ -34,6 +35,7 @@ app.use('/about', about);
 app.use('/work', work);
 app.use('/academics', academics);
 app.use('/extracurriculars', extracurriculars);
+app.use('/contact', contact);
 app.use(error);
 
 /* Start the server

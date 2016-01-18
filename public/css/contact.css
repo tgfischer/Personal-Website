@@ -1,0 +1,7 @@
+#map {
+	border: 1px solid #AAA;
+	display: inline-block;
+    height: 100%;
+    width: 100%;
+    min-height: 300px;
+}

@@ -8,7 +8,9 @@ router.use(function(req, res, next) {
 	// respond with html page
 	if (req.accepts('html')) {
 		res.render('error', {
-			message : message
+			error : message,
+			title : '404: Page Not Found',
+			header : '404: Page Not Found'
 		});
 
 		return;

@@ -1,6 +1,10 @@
 a.white-link {
-	text-decoration: underline;
-	color: white;
+    color: white;
+}
+
+a.white-link:hover {
+    text-decoration: underline;
+    color: #DDD;
 }
 
 p.large-font {

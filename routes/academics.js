@@ -84,7 +84,7 @@ router.get('/', function(req, res, next) {
 				code : "PHYSICS 1401A",
 				average : 83
 			}, {
-				name : "Applied Math for Engineers II",
+				name : "Physics for Engineering Students II",
 				code : "PHYSICS 1402B",
 				average : 78
 			}]

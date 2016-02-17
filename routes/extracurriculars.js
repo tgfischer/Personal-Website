@@ -8,6 +8,10 @@ router.get('/', function(req, res, next) {
 		title : 'Extracurriculars',
 		header : 'Extracurriculars',
 		activities : [{
+            activity : 'IBM Recreational Sports',
+			date : '2015 - Present'
+        },
+        {
 			activity : 'Belmore Jr. Stingers Fastball',
 			date : '2010 - Present'
 		},

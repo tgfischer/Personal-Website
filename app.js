@@ -20,6 +20,13 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.set('view engine', 'ejs');
 app.set('port', process.env.PORT || 3000);
 
+/* Handle robots.txt so web crawlers can index the site
+------------------------------------------------------ */
+app.get('/robots.txt', function (req, res) {
+    res.type('text/plain');
+    res.send("User-agent: *\nDisallow:");
+});
+
 /* Set up the routes
 ------------------------------------------------------ */
 var index = require('./routes/index');

@@ -15,6 +15,10 @@ router.get('/', function(req, res, next) {
 			activity : 'Belmore Jr. Stingers Fastball',
 			date : '2010 - Present'
 		},
+        {
+            activity : 'IBM Future Blue Web Team Leader',
+            date : '2015 - 2016'
+        },
 		{
 			activity : 'O.A.S.A. Provincial Baseball',
 			date : '2002 - 2014'
@@ -49,7 +53,7 @@ router.get('/', function(req, res, next) {
 		}],
 		community : [{
 			activity : 'Owen Wright Memorial Fastball Volunteer',
-			date : '2012 - 2015'
+			date : '2012 - 2016'
 		},
 		{
 			activity : 'Engineering Shadow Day Volunteer',

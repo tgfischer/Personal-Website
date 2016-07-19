@@ -21,10 +21,10 @@ router.get('/', function(req, res, next) {
         header : 'Future Blue Canada Website',
         body : 'From September 2015 to August 2016, I was one of the Future Blue Web Team leads. The main project that I led was a new Future Blue Canada website. I managed between 6-8 students to help with development using Jazz DevOps, with weekly scrums meetings. The website was developed using NodeJS, EJS, and MySQL.'
       }],
-  		skills : [ 
-  			[ 'Java', 'HTML', 'Javascript', 'Dojo', 'CSS' ], 
+  		skills : [
+  			[ 'Java', 'HTML', 'Javascript', 'Dojo', 'CSS' ],
   			[ 'JUnit', 'Selenium', 'Apache Ant', 'NodeJS', 'Express' ],
-  			[ 'EJS', 'MySQL', '', '', '' ]
+  			[ 'EJS', 'MySQL', 'GWT', '', '' ]
   		]
   	},
   	{
@@ -45,8 +45,8 @@ router.get('/', function(req, res, next) {
   			header : 'Ontario One Call Form',
   			body : 'This application automatically inserted data from .DBF files into a SQL Server, at a set interval. This data involved applications for permits. A user could view/edit/delete the data from the database, and generate new reports for queried results. This application also had a feature that would automatically print the permit request when it was added to the database. This feature could be turned on and off.'
   		}],
-  		skills : [ 
-  			[ 'C#', 'SQL', 'LINQ', 'Microsoft Access', 'Microsoft SQL Server' ], 
+  		skills : [
+  			[ 'C#', 'SQL', 'LINQ', 'Microsoft Access', 'Microsoft SQL Server' ],
   			[ 'Java', 'HTML', 'CSS', 'JavaScript', 'Wordpress' ]
   		]
   	},]

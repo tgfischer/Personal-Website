@@ -8,6 +8,15 @@ router.get('/', function(req, res, next) {
 		title : 'Academics',
 		header : 'Academics',
 		projects : [{
+            title : "Future Blue Canada Website",
+            paragraphs : [
+                "I managed a team of ~8 interns over several months to develop the website for Future Blue Canada. The website was written in NodeJS, Express, and MySQL, and it used the IBM Northstar front-end framework.",
+                
+                "Our team utilized a variant of the scrum process. We held weekly meetings where we would review what work items were completed, and what work still needed to be done.",
+
+                "This website will be used to help recruit new interns on university campuses across Canada. It is useful as it allows future interns to get an inside look at the life of an intern at IBM, along with providing them resources that they might find useful."
+            ]
+        }, {
 			title : "Stock Market Application",
 			paragraphs : [
 				"This was a C# project that was completed in my Software Requirements and Analysis class. This application utilized the Observer pattern to show a real-time view of stock prices during the day. Users could input a bid or sell request, and the application would determine if a trade could be made. If a trade could be made, the frame with the list of companies would update with the companies new price.",

@@ -6,6 +6,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var https = require('https');
+var fs = require('fs');
 
 // Create a new express server
 var app = express();

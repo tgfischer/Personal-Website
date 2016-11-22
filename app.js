@@ -5,6 +5,7 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var https = require('https');
 
 // Create a new express server
 var app = express();
@@ -47,6 +48,12 @@ app.use(error);
 
 /* Start the server
 ------------------------------------------------------ */
-app.listen(app.get('port'), function() {
-  console.log("server starting on " + app.get('port'));
+var options = {
+    key  : fs.readFileSync('/etc/letsencrypt/live/tomfischer.ca/privkey.pem'),
+    cert : fs.readFileSync('/etc/letsencrypt/live/tomfischer.ca/cert.pem'),
+    ca   : fs.readFileSync('/etc/letsencrypt/live/tomfischer.ca/chain.pem')
+};
+
+https.createServer(options, app).listen(app.get('port'), '0.0.0.0', function() {
+    console.log("server starting on " + app.get('port'));
 });
